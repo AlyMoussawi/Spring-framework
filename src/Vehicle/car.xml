@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="weDontCareWhatName" class="Vehicle.Car" />
+
+    <bean id="weDontCareWhatName1" class="Vehicle.Car" factory-method="factoryMethod"/>
+
+    <bean id="weDontCareWhatName2" class="Vehicle.Car" scope="prototype"/>
+
+    <bean id="weDontCareWhatName3" class="Vehicle.Car">
+        <property name ="name" value="mer"/>
+        <property name="model" value="slk"/>
+    </bean>
+</beans>
